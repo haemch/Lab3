@@ -5,3 +5,27 @@
 module STL2AML;
 create OUT: AML from IN: STL;
 
+rule SystemToCAEXFile {
+	from 
+		system : STL!System
+	to 
+		hirarchy: AML!InstanceHierarchy(
+			name <- system.name,
+			internalElement <- system.areas
+			
+		),
+		caex_file : AML!CAEXFile(
+			fileName <- system.name,
+			instanceHierarchy <- hirarchy
+		)
+		
+	
+}
+rule AreaToInternalElement {
+	from 
+		area : STL!Area
+	to
+		area_element : AML!InternalElement(
+			name <- area.name
+		)
+}

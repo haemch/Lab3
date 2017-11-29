@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<CAEX:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CAEX="http://caex" fileName="ShelfSawingProductionLine">
+  <instanceHierarchy name="ShelfSawingProductionLine">
+    <internalElement name="ProductionArea"/>
+    <internalElement name="StoreArea"/>
+  </instanceHierarchy>
+</CAEX:CAEXFile>
