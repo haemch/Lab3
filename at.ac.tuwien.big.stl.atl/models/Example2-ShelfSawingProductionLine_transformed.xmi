@@ -27,9 +27,11 @@
     <internalElement name="StoreArea">
       <internalElement name="ShelfStore">
         <attribute name="cost" value="1000"/>
+        <attribute name="capacity" value="500"/>
       </internalElement>
       <internalElement name="WoodWasteStore">
         <attribute name="cost" value="800"/>
+        <attribute name="capacity" value="5000"/>
       </internalElement>
     </internalElement>
   </instanceHierarchy>
