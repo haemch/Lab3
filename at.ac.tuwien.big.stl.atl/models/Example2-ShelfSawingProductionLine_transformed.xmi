@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <CAEX:CAEXFile xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:CAEX="http://caex" fileName="ShelfSawingProductionLine">
   <instanceHierarchy name="ShelfSawingProductionLine">
-    <internalElement name="ProductionArea"/>
-    <internalElement name="StoreArea"/>
+    <internalElement name="ProductionArea">
+      <internalElement name="RawShelfProducer">
+        <attribute name="cost" value="1000"/>
+      </internalElement>
+      <internalElement name="ToBufferConveyor">
+        <attribute name="cost" value="200"/>
+      </internalElement>
+      <internalElement name="Buffer">
+        <attribute name="cost" value="200"/>
+      </internalElement>
+      <internalElement name="SawingMachine">
+        <attribute name="cost" value="1000"/>
+      </internalElement>
+      <internalElement name="ToShelfStoreConveyor">
+        <attribute name="cost" value="200"/>
+      </internalElement>
+      <internalElement name="ToWasteStoreConveyor">
+        <attribute name="cost" value="200"/>
+      </internalElement>
+      <internalElement name="TurnTable">
+        <attribute name="cost" value="200"/>
+      </internalElement>
+    </internalElement>
+    <internalElement name="StoreArea">
+      <internalElement name="ShelfStore">
+        <attribute name="cost" value="1000"/>
+      </internalElement>
+      <internalElement name="WoodWasteStore">
+        <attribute name="cost" value="800"/>
+      </internalElement>
+    </internalElement>
   </instanceHierarchy>
 </CAEX:CAEXFile>

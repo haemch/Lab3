@@ -5,6 +5,9 @@
 module STL2AML;
 create OUT: AML from IN: STL;
 
+helper def : getAttribute(c: STL!Component, s: Set(AML!Attribute)) :Set(AML!Attribute) =
+		s.including(AML!Attribute.newInstance().refSetValue('capacity', c.capacity.toString()));
+	
 rule SystemToCAEXFile {
 	from 
 		system : STL!System
@@ -21,11 +24,32 @@ rule SystemToCAEXFile {
 		
 	
 }
+
 rule AreaToInternalElement {
 	from 
 		area : STL!Area
 	to
 		area_element : AML!InternalElement(
-			name <- area.name
+			name <- area.name,
+			internalElement <- area.components
 		)
 }
+
+rule ComponentToInternalElement{
+	from 
+		component : STL!Component
+	to
+		component_element : AML!InternalElement(
+			name <- component.name,
+			attribute <- if(component.oclIsTypeOf(STL!Store))then 
+							thisModule.getAttribute(component,cost_attribute.asSet())
+						 else
+						 	cost_attribute
+						endif
+		),
+		cost_attribute : AML!Attribute(
+			name <- 'cost',
+			value <- component.cost.toString()
+		)
+}
+
