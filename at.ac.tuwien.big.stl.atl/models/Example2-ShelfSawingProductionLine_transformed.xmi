@@ -37,6 +37,14 @@
         <externalInterface xsi:type="CAEX:ExternalInterface" name="TurnTable_Input"/>
         <externalInterface xsi:type="CAEX:ExternalInterface" name="TurnTable_Output"/>
       </internalElement>
+      <internalLink name="RawShelfProducer_Output_TO_ToBufferConveyor_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.0/@externalInterface.0" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.1/@externalInterface.0"/>
+      <internalLink name="Buffer_Output_TO_SawingMachine_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.2/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.3/@externalInterface.0"/>
+      <internalLink name="ToBufferConveyor_Output_TO_Buffer_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.1/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.2/@externalInterface.0"/>
+      <internalLink name="SawingMachine_ProductOutput_TO_ToShelfStoreConveyor_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.3/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.4/@externalInterface.0"/>
+      <internalLink name="SawingMachine_WasteOutput_TO_TurnTable_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.3/@externalInterface.2" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.6/@externalInterface.0"/>
+      <internalLink name="TurnTable_Output_TO_ToWasteStoreConveyor_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.6/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.0/@internalElement.5/@externalInterface.0"/>
+      <internalLink name="ToWasteStoreConveyor_Output_TO_WoodWasteStore_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.5/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.1/@externalInterface.0"/>
+      <internalLink name="ToShelfStoreConveyor_Output_TO_ShelfStore_Input" partnerSideA="//@instanceHierarchy.0/@internalElement.0/@internalElement.4/@externalInterface.1" partnerSideB="//@instanceHierarchy.0/@internalElement.1/@internalElement.0/@externalInterface.0"/>
     </internalElement>
     <internalElement name="StoreArea">
       <internalElement name="ShelfStore">

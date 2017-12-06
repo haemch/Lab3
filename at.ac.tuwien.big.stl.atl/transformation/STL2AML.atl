@@ -36,7 +36,8 @@ rule AreaToInternalElement {
 	to
 		area_element : AML!InternalElement(
 			name <- area.name,
-			internalElement <- area.components
+			internalElement <- area.components,
+			internalLink <-area.connectors
 		)
 }
 
@@ -66,6 +67,17 @@ rule SlotToExternalInterface{
 			name <- slot.name
 		)
 	
+}
+
+rule ConnectorToInternalLink{
+	from 
+		connector: STL!Connector
+	to
+		internal_link : AML!InternalLink(
+			partnerSideA <- connector.entry,
+			partnerSideB <- connector.exit,
+			name <- connector.entry.name.toString()+'_TO_'+connector.exit.name.toString()	
+		)
 }
 
 
