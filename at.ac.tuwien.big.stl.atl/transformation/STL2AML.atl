@@ -51,9 +51,21 @@ rule ComponentToInternalElement{
 			Set{}.including(thisModule.getCapacityAttribute(component)).including(thisModule.getCostAttribute(component))
 			else
 			thisModule.getCostAttribute(component)
-			endif
+			endif,
+			externalInterface <- component.inputSlots.union(component.outputSlots)
+			
 			
 		)
+}
+
+rule SlotToExternalInterface{
+	from
+		slot : STL!Slot
+	to
+		external_interface : AML!ExternalInterface(
+			name <- slot.name
+		)
+	
 }
 
 
