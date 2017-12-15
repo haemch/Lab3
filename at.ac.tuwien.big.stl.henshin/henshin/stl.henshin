@@ -4,5 +4,141 @@
   <units xsi:type="henshin:Rule" xmi:id="_7YCc0MNtEeeuQef02hjoYQ" name="addBufferToMachine">
     <lhs xmi:id="_7YESBMNtEeeuQef02hjoYQ" name="Lhs"/>
     <rhs xmi:id="_7YESBcNtEeeuQef02hjoYQ" name="Rhs"/>
+    <multiRules xmi:id="_S90ac-GuEeeV9bYWPl-peg">
+      <lhs xmi:id="_S90adOGuEeeV9bYWPl-peg" name="Lhs">
+        <nodes xmi:id="_VTbm8OGuEeeV9bYWPl-peg" outgoing="_pEn5gOGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Machine"/>
+        </nodes>
+        <nodes xmi:id="_cr1-8OGuEeeV9bYWPl-peg" incoming="_pEn5gOGuEeeV9bYWPl-peg _Ue0LwOGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Slot"/>
+        </nodes>
+        <nodes xmi:id="_Mg3dwOGxEeeV9bYWPl-peg" incoming="_bivrEOG9Eee2vvDobmrohw" outgoing="_Ue0LwOGxEeeV9bYWPl-peg _rrPWcOGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Connector"/>
+        </nodes>
+        <nodes xmi:id="_Mg4E0eGxEeeV9bYWPl-peg" incoming="_rrPWcOGuEeeV9bYWPl-peg _ekt7YOHKEee2vvDobmrohw" outgoing="_WjX0wOHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot"/>
+        </nodes>
+        <nodes xmi:id="_Z3lJwOG9Eee2vvDobmrohw" outgoing="_bivrEOG9Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Area"/>
+        </nodes>
+        <nodes xmi:id="_Vx0cAOHCEee2vvDobmrohw" incoming="_WjX0wOHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//ItemType"/>
+        </nodes>
+        <nodes xmi:id="_dhOeEOHKEee2vvDobmrohw" outgoing="_ekt7YOHKEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//TurnTable"/>
+        </nodes>
+        <edges xmi:id="_pEn5gOGuEeeV9bYWPl-peg" source="_VTbm8OGuEeeV9bYWPl-peg" target="_cr1-8OGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Component/inputSlots"/>
+        </edges>
+        <edges xmi:id="_Ue0LwOGxEeeV9bYWPl-peg" source="_Mg3dwOGxEeeV9bYWPl-peg" target="_cr1-8OGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Connector/exit"/>
+        </edges>
+        <edges xmi:id="_bivrEOG9Eee2vvDobmrohw" source="_Z3lJwOG9Eee2vvDobmrohw" target="_Mg3dwOGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Area/connectors"/>
+        </edges>
+        <edges xmi:id="_rrPWcOGuEeeV9bYWPl-peg" source="_Mg3dwOGxEeeV9bYWPl-peg" target="_Mg4E0eGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Connector/entry"/>
+        </edges>
+        <edges xmi:id="_WjX0wOHCEee2vvDobmrohw" source="_Mg4E0eGxEeeV9bYWPl-peg" target="_Vx0cAOHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot/requiredType"/>
+        </edges>
+        <edges xmi:id="_ekt7YOHKEee2vvDobmrohw" source="_dhOeEOHKEee2vvDobmrohw" target="_Mg4E0eGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Component/outputSlots"/>
+        </edges>
+      </lhs>
+      <rhs xmi:id="_S90adeGuEeeV9bYWPl-peg" name="Rhs">
+        <nodes xmi:id="_VTbm8eGuEeeV9bYWPl-peg" outgoing="_pEn5geGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Machine"/>
+        </nodes>
+        <nodes xmi:id="_cr1-8eGuEeeV9bYWPl-peg" incoming="_pEn5geGuEeeV9bYWPl-peg _Ue0LweGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Slot"/>
+        </nodes>
+        <nodes xmi:id="_OKqtIOGxEeeV9bYWPl-peg" incoming="_FEXg4OG6Eee2vvDobmrohw _ekt7YeHKEee2vvDobmrohw" outgoing="_WjX0weHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot"/>
+        </nodes>
+        <nodes xmi:id="_iW6rYOGuEeeV9bYWPl-peg" name="" incoming="_cC_4cOG9Eee2vvDobmrohw" outgoing="_Bjdl8OG6Eee2vvDobmrohw _KwXvgOG8Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Buffer"/>
+          <attributes xmi:id="_6UsTIOGuEeeV9bYWPl-peg" value="&quot;GenBuffer&quot;">
+            <type href="../metamodels/stl.ecore#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_mEqIcOGuEeeV9bYWPl-peg" incoming="_0HX1QOGuEeeV9bYWPl-peg _KwXvgOG8Eee2vvDobmrohw" outgoing="_f7IOUOHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot"/>
+          <attributes xmi:id="_9UJt4OGuEeeV9bYWPl-peg" value="&quot;GenBuffer_IN&quot;">
+            <type href="../metamodels/stl.ecore#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_nMBZIOGuEeeV9bYWPl-peg" incoming="_4OjSwOG-Eee2vvDobmrohw" outgoing="_0HX1QOGuEeeV9bYWPl-peg _FEXg4OG6Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Connector"/>
+        </nodes>
+        <nodes xmi:id="_OKqtIuGxEeeV9bYWPl-peg" incoming="_bivrEeG9Eee2vvDobmrohw" outgoing="_Ue0LweGxEeeV9bYWPl-peg _CluUMOG6Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Connector"/>
+        </nodes>
+        <nodes xmi:id="__f3WguG5Eee2vvDobmrohw" incoming="_Bjdl8OG6Eee2vvDobmrohw _CluUMOG6Eee2vvDobmrohw" outgoing="_bmZpwOHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot"/>
+          <attributes xmi:id="_Gy104OG6Eee2vvDobmrohw" value="&quot;GenBuffer_OUT&quot;">
+            <type href="../metamodels/stl.ecore#//NamedElement/name"/>
+          </attributes>
+        </nodes>
+        <nodes xmi:id="_Z3lJweG9Eee2vvDobmrohw" outgoing="_bivrEeG9Eee2vvDobmrohw _cC_4cOG9Eee2vvDobmrohw _4OjSwOG-Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Area"/>
+        </nodes>
+        <nodes xmi:id="_Vx0cAeHCEee2vvDobmrohw" incoming="_WjX0weHCEee2vvDobmrohw _bmZpwOHCEee2vvDobmrohw _f7IOUOHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//ItemType"/>
+        </nodes>
+        <nodes xmi:id="_dhOeEeHKEee2vvDobmrohw" outgoing="_ekt7YeHKEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//TurnTable"/>
+        </nodes>
+        <edges xmi:id="_pEn5geGuEeeV9bYWPl-peg" source="_VTbm8eGuEeeV9bYWPl-peg" target="_cr1-8eGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Component/inputSlots"/>
+        </edges>
+        <edges xmi:id="_0HX1QOGuEeeV9bYWPl-peg" source="_nMBZIOGuEeeV9bYWPl-peg" target="_mEqIcOGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Connector/exit"/>
+        </edges>
+        <edges xmi:id="_Ue0LweGxEeeV9bYWPl-peg" source="_OKqtIuGxEeeV9bYWPl-peg" target="_cr1-8eGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Connector/exit"/>
+        </edges>
+        <edges xmi:id="_Bjdl8OG6Eee2vvDobmrohw" source="_iW6rYOGuEeeV9bYWPl-peg" target="__f3WguG5Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Component/outputSlots"/>
+        </edges>
+        <edges xmi:id="_CluUMOG6Eee2vvDobmrohw" source="_OKqtIuGxEeeV9bYWPl-peg" target="__f3WguG5Eee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Connector/entry"/>
+        </edges>
+        <edges xmi:id="_FEXg4OG6Eee2vvDobmrohw" source="_nMBZIOGuEeeV9bYWPl-peg" target="_OKqtIOGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Connector/entry"/>
+        </edges>
+        <edges xmi:id="_KwXvgOG8Eee2vvDobmrohw" source="_iW6rYOGuEeeV9bYWPl-peg" target="_mEqIcOGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Component/inputSlots"/>
+        </edges>
+        <edges xmi:id="_bivrEeG9Eee2vvDobmrohw" source="_Z3lJweG9Eee2vvDobmrohw" target="_OKqtIuGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Area/connectors"/>
+        </edges>
+        <edges xmi:id="_cC_4cOG9Eee2vvDobmrohw" source="_Z3lJweG9Eee2vvDobmrohw" target="_iW6rYOGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Area/components"/>
+        </edges>
+        <edges xmi:id="_4OjSwOG-Eee2vvDobmrohw" source="_Z3lJweG9Eee2vvDobmrohw" target="_nMBZIOGuEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Area/connectors"/>
+        </edges>
+        <edges xmi:id="_WjX0weHCEee2vvDobmrohw" source="_OKqtIOGxEeeV9bYWPl-peg" target="_Vx0cAeHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot/requiredType"/>
+        </edges>
+        <edges xmi:id="_bmZpwOHCEee2vvDobmrohw" source="__f3WguG5Eee2vvDobmrohw" target="_Vx0cAeHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot/requiredType"/>
+        </edges>
+        <edges xmi:id="_f7IOUOHCEee2vvDobmrohw" source="_mEqIcOGuEeeV9bYWPl-peg" target="_Vx0cAeHCEee2vvDobmrohw">
+          <type href="../metamodels/stl.ecore#//Slot/requiredType"/>
+        </edges>
+        <edges xmi:id="_ekt7YeHKEee2vvDobmrohw" source="_dhOeEeHKEee2vvDobmrohw" target="_OKqtIOGxEeeV9bYWPl-peg">
+          <type href="../metamodels/stl.ecore#//Component/outputSlots"/>
+        </edges>
+      </rhs>
+      <mappings xmi:id="_VTbm8uGuEeeV9bYWPl-peg" origin="_VTbm8OGuEeeV9bYWPl-peg" image="_VTbm8eGuEeeV9bYWPl-peg"/>
+      <mappings xmi:id="_cr1-8uGuEeeV9bYWPl-peg" origin="_cr1-8OGuEeeV9bYWPl-peg" image="_cr1-8eGuEeeV9bYWPl-peg"/>
+      <mappings xmi:id="_OKqtIeGxEeeV9bYWPl-peg" origin="_Mg4E0eGxEeeV9bYWPl-peg" image="_OKqtIOGxEeeV9bYWPl-peg"/>
+      <mappings xmi:id="_OKqtI-GxEeeV9bYWPl-peg" origin="_Mg3dwOGxEeeV9bYWPl-peg" image="_OKqtIuGxEeeV9bYWPl-peg"/>
+      <mappings xmi:id="_Z3lJwuG9Eee2vvDobmrohw" origin="_Z3lJwOG9Eee2vvDobmrohw" image="_Z3lJweG9Eee2vvDobmrohw"/>
+      <mappings xmi:id="_Vx0cAuHCEee2vvDobmrohw" origin="_Vx0cAOHCEee2vvDobmrohw" image="_Vx0cAeHCEee2vvDobmrohw"/>
+      <mappings xmi:id="_dhOeEuHKEee2vvDobmrohw" origin="_dhOeEOHKEee2vvDobmrohw" image="_dhOeEeHKEee2vvDobmrohw"/>
+    </multiRules>
   </units>
 </henshin:Module>
